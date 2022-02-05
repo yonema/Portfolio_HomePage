@@ -1,21 +1,13 @@
 /* グローバル変数 */
 :root
 {
-    /* 
-    タイトル画像のサイズ
-    1980 * 0.4 = 792
-    1080 * 0.4 = 432
-     */
-    --kTitleImageWidth: 792px;
-    --kTitleImageHeight: 432px;
+    /* タイトル画像のサイズ */
+    --kTitleImageWidth: calc(1980px * 0.7);
+    --kTitleImageHeight: calc(1080px * 0.7);
 
-    /* 
-    タイトル画像のサイズ
-    1980 * 0.3 = 594
-    1080 * 0.3 = 324
-     \*/
-     --kNormalImageWidth: 594px;
-     --kNormalImageHeight: 324px;
+    /* タイトル画像のサイズ */
+     --kNormalImageWidth: calc(1980px * 0.6);
+     --kNormalImageHeight: calc(1080px * 0.6);
 
     /* ミニ画像のサイズ */
      --kMinilImageWidth: 324px;
@@ -29,6 +21,9 @@
 
      /* ヘッダーのZインデックス */
      --kHeaderZ-index: 2;
+
+     /* プロフィールテキストの拡大率 */
+     --kProfileTextScale: 1.5;
 }
 
 html
@@ -402,12 +397,12 @@ https://obl-life.com/web/182/
   .profile-job{
     margin-bottom: 30px;
     color: #ccc;
-    font-size: calc(10px 200%);
+    font-size: calc(10px * var(--kProfileTextScale));
     text-align: center;
   }
   
   .profile-intro{
-    font-size: calc(12px 200%);
+    font-size: calc(12px * var(--kProfileTextScale));
   }
   
   .profile-sns {
@@ -418,12 +413,12 @@ https://obl-life.com/web/182/
   
   .profile-sns span{
     display: block;
-    font-size: calc(10px 200%);
+    font-size: calc(10px * var(--kProfileTextScale));
 
   }
   
   .profile-sns a {
-    font-size: calc(30px 200%);
+    font-size: calc(30px * var(--kProfileTextScale));
       margin: 0 5px;
       color: #fff;
 
