@@ -83,9 +83,9 @@
   <tr>
     <th>リンク</th>
     <td>
-    <a href = "https://yonema.github.io/NinjaAttract_Portfolio/" target="_blank" >ポートフォリオ</a>
-    ,
-    <a href = "https://github.com/yonema/NinjaAttract_MyGame" target="_blank" >GitHub</a>
+      <a href = "https://yonema.github.io/NinjaAttract_Portfolio/" target="_blank" >ポートフォリオ</a>
+      ,
+      <a href = "https://github.com/yonema/NinjaAttract_MyGame" target="_blank" >GitHub</a>
     </td>
   </th>
   <tr>
@@ -142,9 +142,9 @@
   <tr>
     <th>リンク</th>
     <td>
-    <a href = "https://yonema.github.io/Mobyrinth_Portfolio" target="_blank" >ポートフォリオ</a>
-    ,
-    <a href = "https://github.com/yonema/Mobyrinth_MyGame" target="_blank" >GitHub</a>
+      <a href = "https://yonema.github.io/Mobyrinth_Portfolio" target="_blank" >ポートフォリオ</a>
+      ,
+      <a href = "https://github.com/yonema/Mobyrinth_MyGame" target="_blank" >GitHub</a>
     </td>
   </th>
   <tr>
@@ -313,7 +313,9 @@
   </th>
   <tr>
     <th>リンク</th>
-    <td>---</td>
+    <td>
+      <a href = "https://yonema.github.io/MushiToreGrayChan/" target="_blank" >ミニポートフォリオ</a>
+    </td>
   </th>
   <tr>
     <th>開発人数</th>
