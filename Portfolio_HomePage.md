@@ -257,7 +257,9 @@
   </th>
   <tr>
     <th>リンク</th>
-    <td>---</td>
+    <td>
+      <a href = "https://yonema.github.io/HoshiHosshi_Portfolio/" target="_blank" >ミニポートフォリオ</a>
+    </td>
   </th>
   <tr>
     <th>開発人数</th>
