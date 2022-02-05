@@ -1,0 +1,133 @@
+:root
+{
+    /* 
+    タイトル画像のサイズ
+    1980 * 0.4 = 792
+    1080 * 0.4 = 432
+     */
+    --kTitleImageWidth: 792px;
+    --kTitleImageHeight: 432px;
+
+    /* 
+    タイトル画像のサイズ
+    1980 * 0.3 = 594
+    1080 * 0.3 = 324
+     */
+     --kNormalImageWidth: 594px;
+     --kNormalImageHeight: 324px;
+
+     /*
+     ミニ画像のサイズ
+     */
+     --kMinilImageWidth: 324px;
+     --kMinilImageHeight: 324px;
+}
+
+body
+{
+    background-image: url(images/background.png);
+    background-attachment: fixed;
+    background-position: left top;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+/* タイトル画像のスタイル */
+.titleImage
+{ 
+    width: var(--kTitleImageWidth);
+    height: var(--kTitleImageHeight);
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.6);
+}
+
+.simpleFrame
+{
+    padding: 11px;
+    background-color: #fff;
+    box-shadow: 0 3px 18px -4px rbga(0,0,0,0.8);
+}
+
+/* 通常の画像のスタイル */
+.normalImage
+{ 
+    width: var(--kNormalImageWidth);
+    height: var(--kNormalImageHeight);
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.6);
+    /*
+    padding: 11px;
+    background-color: #fff;
+    box-shadow: 0 3px 18px -4px rbga(0,0,0,0.8);*/
+}
+
+.miniImage
+{
+    width: var(--kMinilImageWidth);
+    height: var(--kMinilImageHeight);
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.6);
+}
+
+/* 「目次へ」のスタイル */
+.goToIndexText
+{
+    text-align: right;
+}
+
+
+/* <チートシート>
+------------------------------------------------------------------------ */
+.right
+{
+    text-align: right;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.border
+{
+    border: 3px solid #ddd;
+}
+
+/* <【CSS】おしゃれなボックスデザイン（囲み枠）のサンプル30>
+https://saruwakakun.com/html-css/reference/box
+------------------------------------------------------------------------ */
+
+.box1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 3px #000000;
+}
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+
+
+.box27 {
+    display: inline-block;
+    position: relative;
+    margin: 2em 0;
+    padding: 0.5em 1em;
+    border: solid 3px #62c1ce;
+}
+.box27 .box-title {
+    position: absolute;
+    display: inline-block;
+    top: -27px;
+    left: -3px;
+    padding: 0 9px;
+    height: 25px;
+    line-height: 25px;
+    font-size: 17px;
+    background: #62c1ce;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px 5px 0 0;
+}
+.box27 p {
+    margin: 0; 
+    padding: 0;
+}
