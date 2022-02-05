@@ -21,9 +21,14 @@
      --kMinilImageWidth: 324px;
      --kMinilImageHeight: 324px;
 
-    /* 左寄せのアイコン用のパディング */
-     --kLeftAdjustIconMarginRight: 10px;
-     --kLeftAdjustIconMarginButtom: 10px;
+    /* ゲーム作品紹介のマージン */
+    --kGameContentMarginVertical: 50px;
+    --kGameContentTexttMarginLeft: 10px;
+    /* ゲーム作品紹介の右側のアイテムの最低幅 */
+    --kGameContentRightMinWidth: 600px;
+
+     /* ヘッダーのZインデックス */
+     --kHeaderZ-index: 1;
 }
 
 html
@@ -76,25 +81,93 @@ body
     box-shadow: 10px 10px 0 rgba(0,0,0,0.6);
 }
 
-/* 左寄せのアイコン */
-.LeftAdjustIcon
-{
-    float: left;
-    margin-right: var(--kLeftAdjustIconMarginRight);
-    margin-bottom: var(--kLeftAdjustIconMarginButtom);
-}
-
-/* 左寄せの説明用テキストのスタイル */
-.LeftAdjustIntroductionText
-{
-    float: left;
-    margin-bottom: var(--kLeftAdjustIconMarginButtom);
-}
-
 /* 「目次へ」のスタイル */
 .goToIndexText
 {
     text-align: right;
+}
+
+/* ヘッダーボックス */
+.headerBox
+{
+    /* 上に固定 */
+    position: sticky;
+    top: 0;
+    
+    /* 手前に表示 */
+    z-index: var(--kHeaderZ-index);
+    
+    /* 真ん中に配置 */
+    text-align: center;
+
+    /* 画面いっぱいに広げる */
+    width: 100%;
+
+    /* ボックスのカラー */
+    background-color: rgba(230, 255, 220, 0.9);
+}
+
+/* ヘッダーテキスト */
+.headerText
+{
+    /* 上に固定 */
+    position: sticky;
+    top: 0;
+    
+    /* 手前に表示 */
+    z-index: var(--kHeaderZ-index);
+
+    /* 横に並べて配置 */
+    display: inline-table;
+
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 5px;
+
+    /* フォントを通常より大きく */
+    font-size: 120%;
+}
+
+/* ゲーム作品紹介の左側のアイテム */
+.gameContentLeft
+{
+    /* 横に並べて配置 */
+    display: inline-block;
+    /* 縦は中央ぞろえ */
+    vertical-align: middle;
+
+    /* 上下にマージン */
+    margin-top: var(--kGameContentMarginVertical);
+    margin-bottom: var(--kGameContentMarginVertical);
+}
+
+/* ゲーム作品紹介の右側のアイテム */
+.gameContentRight
+{
+    /* 横に並べて配置 */
+    display: inline-block;
+    /* 縦は中央ぞろえ */
+    vertical-align: middle;
+
+    /* 上下にマージン */
+    margin-top: var(--kGameContentMarginVertical);
+    margin-bottom: var(--kGameContentMarginVertical);
+
+    /* 左にマージン */
+    margin-left: var(--kGameContentTexttMarginLeft);
+
+    /* 右側のアイテムの幅 */
+    /* 通常は画面の半分の幅 */
+    width: 50%;
+    /* 最低幅は600px */
+    min-width: var(--kGameContentRightMinWidth);
+}
+
+/* ゲーム作品紹介の文章 */
+.gameContentText
+{
+    text-align: left;
+    margin-left: 5px;
 }
 
 
@@ -162,3 +235,51 @@ https://saruwakakun.com/html-css/reference/box
     margin: 0; 
     padding: 0;
 }
+
+/* 【コピペOK】CSSだけで実装できるおしゃれテーブルデザイン10つ
+https://webliker.info/75964/
+------------------------------------------------------------------------ */
+table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table tr{
+    border-bottom: solid 2px white;
+  }
+  
+  table tr:last-child{
+    border-bottom: none;
+  }
+  
+  table th{
+    position: relative;
+    text-align: left;
+    width: 30%;
+    background-color: #52d082;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  table th:after{
+    display: block;
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top:calc(50% - 10px);
+    right:-10px;
+    border-left: 10px solid #52d082;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  
+  table td{
+    text-align: left;
+    width: 70%;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px 0;
+  }
+  
