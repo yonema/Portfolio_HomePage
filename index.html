@@ -366,48 +366,52 @@ code {
     });
   </script>
 <link href="stylesheet.css" rel="stylesheet"></link>
+<!-- ヘッダー -->
 <section class = headerBox>
-<section class = headerText>
+  <!-- 要素 -->
+  <section class = headerText>
 <p><a href="#%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB">プロフィール</a></p>
-</section>
-<section class = headerText>
+  </section>
+  <!-- /要素 -->
+  <!-- 要素 -->
+  <section class = headerText>
 <p><a href="#%E4%BD%9C%E5%93%81">作品</a></p>
+  </section>
+  <!-- /要素 -->
 </section>
+<!-- /ヘッダー -->
+<!-- タイトル -->
+<section class = HomePageTilteText>
+<h1 id="%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA%E3%83%9A%E3%83%BC%E3%82%B8">ポートフォリオページ</h1>
 </section>
-<h1 id="%E3%83%9D%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%AA%E3%82%AA-%E3%83%9B%E3%83%BC%E3%83%A0%E3%83%9A%E3%83%BC%E3%82%B8">ポートフォリオ　ホームページ</h1>
+<!-- /タイトル -->
+<!-- プロフィール -->
+<section class = HomePageIndexText>
 <h1 id="%E3%83%97%E3%83%AD%E3%83%95%E3%82%A3%E3%83%BC%E3%83%AB">プロフィール</h1>
-<ul>
-<li>所属
-<ul>
-<li>河原電子ビジネス専門学校ゲームクリエイター科2年生</li>
-</ul>
-</li>
-<li>名前
-<ul>
-<li>米地真央</li>
-</ul>
-</li>
-<li>卒業予定年月
-<ul>
-<li>2023年3月</li>
-</ul>
-</li>
-<li>スキル
-<ul>
-<li>C++</li>
-<li>DirectX12</li>
-<li>HLSL</li>
-</ul>
-</li>
-<li>リンク
-<ul>
-<li><a href="https://twitter.com/MaoYoneji">twitter</a></li>
-<li><a href="https://t.co/9eECMGKMFi">Youtube</a></li>
-<li><a href="https://github.com/yonema">GitHub</a></li>
-</ul>
-</li>
-</ul>
+</section>
+<section class = profile-card>
+  <section class = profile-card__inner>
+    <section class = profile-thumb>
+      <img src = images/profile_icon.jpg alt = アイコン>
+    </section>
+    <section class = profile-content>
+      <span class = profile-name>米地真央</span>
+      <span class = profile-job>河原電子ビジネス専門学校ゲームクリエイター科2年生</span>
+      <span class = profile-intro>　2023年卒業見込みの専門学生です。主にC++、DirectX12を用いてゲーム開発を行っています。アクションやレンダリング周り、シェーダーのプログラミングが得意です。よろしくお願いします。</span>
+    </section>
+    <section class = profile-sns>
+      <span>FOLLOW ME</span>
+      <a href = "https://twitter.com/MaoYoneji" target="_blank"><img src = images/twitter_icon.png class = snsIconImage></a>
+      <a href = "https://www.youtube.com/channel/UC03BQEviN9mx7Y-QmyndPuw" target="_blank"><img src = images/youtube_icon.png class = snsIconImage></a>
+      <a href = "https://github.com/yonema" target="_blank"><img src = images/git_icon.png class = snsIconImage></a>
+    </section>
+  </section>
+</section>
+<!-- /プロフィール -->
+<!-- 作品 -->
+<section class = HomePageIndexText>
 <h1 id="%E4%BD%9C%E5%93%81">作品</h1>
+</section>
 <!-- Ninja_Attract -->
   <!-- アイコン（動画） -->
 <section class = gameContentLeft>
@@ -671,5 +675,6 @@ code {
 </section>
   <!-- /作品説明 -->
 <!-- /むしをとれとれグレイちゃん -->
+<!-- /作品 -->
 </body>
 </html>

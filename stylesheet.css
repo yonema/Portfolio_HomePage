@@ -128,6 +128,36 @@ body
     font-size: 120%;
 }
 
+/* ホームページのタイトルテキスト */
+.HomePageTilteText
+{
+    text-align: center;
+    font-size: 150%;
+}
+
+/* ホームページの見出しテキスト */
+.HomePageIndexText
+{
+    position: relative;
+    width: fit-content;
+    margin-top: 50px;
+    padding-left: calc(25px + 10px);
+    padding-right: 15px;
+}
+.HomePageIndexText::before
+{
+    transform: skewX(20deg);
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25px;
+    right: 0;
+    z-index: -1;
+    background-color: chartreuse;
+}
+
+
 /* ゲーム作品紹介の左側のアイテム */
 .gameContentLeft
 {
@@ -170,6 +200,11 @@ body
     margin-left: 5px;
 }
 
+.snsIconImage
+{
+    width: 50px;
+    height: 50px;
+}
 
 /* <チートシート>
 ------------------------------------------------------------------------ */
@@ -283,3 +318,113 @@ table{
     padding: 10px 0;
   }
   
+
+
+ /* コピペで簡単実装できるプロフィールカード！【HTML/CSS】
+https://obl-life.com/web/182/
+------------------------------------------------------------------------ */
+.profile-card{
+    width: 100%;
+    max-width:500px;
+    position: relative;
+    background: #fff; /*背景の色*/
+    /* box-shadow: 0px 1px 3px rgba(0,0,0,.18); */
+    box-shadow: 10px 10px 0 rgba(0,0,0,0.6);
+    overflow: hidden;
+    margin-left: 35%;
+    border: 5px ridge;
+  }
+  
+  .profile-card:before{
+   width:120%;
+   height:180px;
+   content:"";
+   transform:skew(15deg,10deg);
+   background: #70ff94; /*斜め背景の色*/
+   position:  absolute;
+   top:-15%;
+   left:-10%;
+   z-index: 0;
+  }
+  
+  .profile-card:after{
+   width:120%;
+   height:200px;
+   content:"";
+   transform:skew(15deg,10deg);
+   background: #70ff94; /*斜め背景の色*/
+   position:  absolute;
+   bottom:-15%;
+   left:-10%;
+   z-index: 0;
+  }
+  
+  .profile-card__inner{
+   position: relative;
+    z-index: 1;
+  }
+  
+  .profile-thumb{
+      overflow: hidden;
+      width: 110px;
+      height: 110px;
+      border: #fff 3px solid;
+      border-radius: 55px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+      background: #fff;
+  }
+  
+  .profile-thumb img{
+    display: block;
+      width: 100%;
+      height: auto;
+  }
+  
+  .profile-content{
+    margin: 0 0 49px;
+    padding: 30px 30px 50px;
+    
+  }
+  
+  .profile-content span{
+    display: block;
+  }
+  
+  .profile-name{
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+    font-size: 200%;
+  }
+  
+  .profile-job{
+    margin-bottom: 30px;
+    color: #ccc;
+    font-size: calc(10px 200%);
+    text-align: center;
+  }
+  
+  .profile-intro{
+    font-size: calc(12px 200%);
+  }
+  
+  .profile-sns {
+      padding: 5px 0;
+      text-align: center;
+      color: #fff;
+  }
+  
+  .profile-sns span{
+    display: block;
+    font-size: calc(10px 200%);
+
+  }
+  
+  .profile-sns a {
+    font-size: calc(30px 200%);
+      margin: 0 5px;
+      color: #fff;
+
+  }

@@ -1,35 +1,61 @@
 <link href="stylesheet.css" rel="stylesheet"></link>
 
+<!-- ヘッダー -->
 <section class = headerBox>
-<section class = headerText>
+  <!-- 要素 -->
+  <section class = headerText>
+  
+  [プロフィール](#プロフィール)
+  </section>
+  <!-- /要素 -->
 
-[プロフィール](#プロフィール)
-</section>
-<section class = headerText>
+  <!-- 要素 -->
+  <section class = headerText>
 
-[作品](#作品)
+  [作品](#作品)
+  </section>
+  <!-- /要素 -->
 </section>
-</section>
+<!-- /ヘッダー -->
 
-# ポートフォリオ　ホームページ
+<!-- タイトル -->
+<section class = HomePageTilteText>
+
+# ポートフォリオページ
+</section>
+<!-- /タイトル -->
+
+<!-- プロフィール -->
+<section class = HomePageIndexText>
 
 # プロフィール
-* 所属
-  * 河原電子ビジネス専門学校ゲームクリエイター科2年生
-* 名前
-  * 米地真央
-* 卒業予定年月
-  * 2023年3月
-* スキル
-  * C++
-  * DirectX12
-  * HLSL
-* リンク
-  * [twitter](https://twitter.com/MaoYoneji)
-  * [Youtube](https://t.co/9eECMGKMFi)
-  * [GitHub](https://github.com/yonema)
+</section>
+
+<section class = profile-card>
+  <section class = profile-card__inner>
+    <section class = profile-thumb>
+      <img src = images/profile_icon.jpg alt = アイコン>
+    </section>
+    <section class = profile-content>
+      <span class = profile-name>米地真央</span>
+      <span class = profile-job>河原電子ビジネス専門学校ゲームクリエイター科2年生</span>
+      <span class = profile-intro>　2023年卒業見込みの専門学生です。主にC++、DirectX12を用いてゲーム開発を行っています。アクションやレンダリング周り、シェーダーのプログラミングが得意です。よろしくお願いします。</span>
+    </section>
+    <section class = profile-sns>
+      <span>FOLLOW ME</span>
+      <a href = "https://twitter.com/MaoYoneji" target="_blank"><img src = images/twitter_icon.png class = snsIconImage></a>
+      <a href = "https://www.youtube.com/channel/UC03BQEviN9mx7Y-QmyndPuw" target="_blank"><img src = images/youtube_icon.png class = snsIconImage></a>
+      <a href = "https://github.com/yonema" target="_blank"><img src = images/git_icon.png class = snsIconImage></a>
+    </section>
+  </section>
+</section>
+<!-- /プロフィール -->
+
+<!-- 作品 -->
+<section class = HomePageIndexText>
 
 # 作品
+</section>
 
 <!-- Ninja_Attract -->
   <!-- アイコン（動画） -->
@@ -313,3 +339,5 @@
 
   <!-- /作品説明 -->
 <!-- /むしをとれとれグレイちゃん -->
+
+<!-- /作品 -->
