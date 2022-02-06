@@ -86,6 +86,8 @@
       <a href = "https://yonema.github.io/NinjaAttract_Portfolio/" target="_blank" >ポートフォリオ</a>
       ,
       <a href = "https://github.com/yonema/NinjaAttract_MyGame" target="_blank" >GitHub</a>
+      ,
+      <a href = "https://docs.google.com/presentation/d/e/2PACX-1vRyXdtLrCXvlrrA4qhkaMxzB2t80S6407dF6-GJ39NUd3jHzqCR5rdmg7iXdwDyAV8OmsGPS4fcEssx/pub?start=false&loop=false&delayms=3000" target="_blank" >Googleスライド</a>
     </td>
   </th>
   <tr>
@@ -145,6 +147,8 @@
       <a href = "https://yonema.github.io/Mobyrinth_Portfolio" target="_blank" >ポートフォリオ</a>
       ,
       <a href = "https://github.com/yonema/Mobyrinth_MyGame" target="_blank" >GitHub</a>
+      ,
+      <a href = "https://docs.google.com/presentation/d/e/2PACX-1vT39cobPzdrzVb9ZOS1PpNvG-zwMWWijW4axtHdF2hktWHbkgH63b2ZVVUf0dGEnw4vVPwjDK5WGMNe/pub?start=false&loop=false&delayms=3000" target="_blank" >Googleスライド</a>
     </td>
   </th>
   <tr>
@@ -259,6 +263,8 @@
     <th>リンク</th>
     <td>
       <a href = "https://yonema.github.io/HoshiHosshi_Portfolio/" target="_blank" >ミニポートフォリオ</a>
+      ,
+      <a href = "https://docs.google.com/presentation/d/e/2PACX-1vSCB56lOQCzDbV2ar0Mh3ChBLZwccBVhl4rYzAFaheUj9eclZB8IHqKZCcbu5PFoGoC--0cChbJ21D_/pub?start=false&loop=false&delayms=3000" target="_blank" >Googleスライド</a>
     </td>
   </th>
   <tr>
